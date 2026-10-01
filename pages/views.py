@@ -1,10 +1,9 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
 
 def home_page_view(request):
-    return HttpResponse("Homepage")
+    return render(request, "pages/home.html")
 
 
 def about_page_view(request):
